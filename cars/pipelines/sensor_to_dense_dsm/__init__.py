@@ -19,17 +19,10 @@
 # limitations under the License.
 #
 """
-Cars module init file
+CARS sensor_to_dense_dsm pipeline module init file
 """
 
-# Standard imports
-from importlib.metadata import version
-
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
-
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"
+# Cars imports
+from cars.pipelines.sensor_to_dense_dsm import (  # noqa: F401
+    sensor_to_dense_dsm_pipeline,
+)

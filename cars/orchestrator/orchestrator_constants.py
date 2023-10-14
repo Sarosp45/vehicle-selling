@@ -19,17 +19,11 @@
 # limitations under the License.
 #
 """
-Cars module init file
+this module contains the orchestrator constants
 """
 
-# Standard imports
-from importlib.metadata import version
 
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
-
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"
+CARS_DATASET_KEY = "cars_ds_key"
+SAVING_INFO = "saving_info"
+CARS_DS_ROW = "cars_ds_row"
+CARS_DS_COL = "cars_ds_col"

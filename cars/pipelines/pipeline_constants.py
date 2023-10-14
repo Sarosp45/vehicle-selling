@@ -19,17 +19,13 @@
 # limitations under the License.
 #
 """
-Cars module init file
+this module contains the constants used for all pipelines
 """
 
-# Standard imports
-from importlib.metadata import version
+# Sensor input
 
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
-
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"
+INPUTS = "inputs"
+OUTPUT = "output"
+APPLICATIONS = "applications"
+ORCHESTRATOR = "orchestrator"
+PIPELINE = "pipeline"

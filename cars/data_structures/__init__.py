@@ -19,17 +19,5 @@
 # limitations under the License.
 #
 """
-Cars module init file
+CARS data_structures module init file
 """
-
-# Standard imports
-from importlib.metadata import version
-
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
-
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"

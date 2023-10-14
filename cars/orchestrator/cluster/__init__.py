@@ -19,17 +19,18 @@
 # limitations under the License.
 #
 """
-Cars module init file
+CARS cluster module init file
 """
+# flake8: noqa: F401
 
-# Standard imports
-from importlib.metadata import version
+# CARS imports
+from cars.orchestrator.cluster.abstract_cluster import AbstractCluster
 
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
-
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"
+from . import (
+    abstract_dask_cluster,
+    local_dask_cluster,
+    mp_cluster,
+    pbs_dask_cluster,
+    sequential_cluster,
+    slurm_dask_cluster,
+)

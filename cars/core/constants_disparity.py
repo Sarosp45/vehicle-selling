@@ -19,17 +19,25 @@
 # limitations under the License.
 #
 """
-Cars module init file
+CARS Disparity Constants module
 """
 
-# Standard imports
-from importlib.metadata import version
+# disparity map
+MAP = "disp"
 
-# VERSION through setuptools_scm when python3 > 3.8
-try:
-    __version__ = version("cars")
-except Exception:  # pylint: disable=broad-except
-    __version__ = "unknown"
+CONFIDENCE = "confidence"
 
-__author__ = "CNES"
-__email__ = "cars@cnes.fr"
+# disparity mask
+VALID = "disp_msk"
+INVALID_REF = "msk_invalid_ref"
+INVALID_SEC = "msk_invalid_sec"
+MASKED_REF = "msk_masked_ref"
+MASKED_SEC = "msk_masked_sec"
+OCCLUSION = "msk_occlusion"
+FALSE_MATCH = "msk_false_match"
+INCOMPLETE_DISP = "msk_incomplete_disp"
+STOPPED_INTERP = "msk_stopped_interp"
+FILLED_OCCLUSION = "msk_filled_occlusion"
+FILLED_FALSE_MATCH = "msk_filled_false_match"
+INSIDE_SEC_ROI = "msk_inside_sec_roi"
+DISP_TO_0 = "msk_disp_to_0"
